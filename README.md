@@ -27,6 +27,7 @@ import TimeField from 'react-simple-timefield';
     input={<MyCustomInputElement />} // {Element}  default: <input type="text" />
     colon=":"                        // {String}   default: ":"
     showSeconds                      // {Boolean}  default: false
+    showMs                           // {Boolean}  default: false
 />
 ```
 
@@ -60,6 +61,7 @@ class App extends React.Component {
 ```
 
 ## Changelog
+* 2.1.0 Forked from master and added option for showing and changing milliseconds values, changed componentWillReceiveProps to UNSAFE_
 * 2.0.3 user can type letter when component first loads (closes [#9](https://github.com/antonfisher/react-simple-timefield/issues/9)) ([8f51c70](https://github.com/antonfisher/react-simple-timefield/commit/8f51c70))
 * 2.0.1 Do not fall if `value`/`onChange` is undefined (part of issue [#8](https://github.com/antonfisher/react-simple-timefield/issues/8))
 * 2.0.0 React v16 support
